@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.EventdetailActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/eventdetailpic"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/lbleventname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventdetailpic"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="50dp"
+        android:text="Event name" />
+
+
+    <TextView
+        android:id="@+id/eventdetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventdetailpic"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="27dp"
+        android:hint="Event " />
+
+    <TextView
+        android:id="@+id/lblevtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbleventname"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:text="Event Type" />
+
+    <TextView
+        android:id="@+id/detaileventtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventdetailName"
+        android:layout_marginStart="-72dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/eventdetailpic"
+        android:hint="Type"
+        android:layout_marginLeft="-72dp"
+        android:layout_toRightOf="@+id/eventdetailpic" />
+
+    <TextView
+        android:id="@+id/lbleventdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/detaileventtype"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/detailevDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detaileventtype"
+        android:layout_marginStart="-71dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/eventdetailpic"
+        android:hint="Event Description"
+        android:layout_toRightOf="@+id/eventdetailpic" />
+
+    <TextView
+        android:id="@+id/lblevlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/detailevDescription"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/detailevLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailevDescription"
+        android:layout_marginStart="-71dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/eventdetailpic"
+        android:hint="Event Location"
+        android:layout_toRightOf="@+id/eventdetailpic" />
+
+
+
+
+</RelativeLayout>

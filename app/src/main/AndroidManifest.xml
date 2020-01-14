@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.EventsActivity"></activity>
+        <activity android:name=".UI.EventdetailActivity"></activity>
+        <activity android:name=".UI.EventsActivity" />
         <activity android:name=".OrganizeEventActivity" />
         <activity android:name=".UI.FileCaseActivity" />
         <activity android:name=".CasesActivity" />
