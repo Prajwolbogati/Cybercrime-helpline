@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.DetailLawsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#fff"
+                android:elevation="8dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvnewstitle"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hello"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvnewsptime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnewstitle"
+                    android:layout_marginTop="10dp"
+                    android:text="15 min ago" />
+
+                <ImageView
+                    android:id="@+id/newspic1"
+                    android:layout_width="140dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvnewstitle"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_local_activity_purple_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:elevation="8dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvnewstitle1"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hey"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvnewsptime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnewstitle1"
+                    android:layout_marginTop="10dp"
+                    android:text="2 hr ago" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:id="@+id/newspic2"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvnewstitle1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_local_activity_purple_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:elevation="8dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvnewstitle2"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hey"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvnewsptime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnewstitle2"
+                    android:layout_marginTop="10dp"
+                    android:text="4 hr ago" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:id="@+id/newspic3"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvnewstitle2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_local_activity_purple_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:elevation="8dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvnewstitle3"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hello"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvnewsptime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnewstitle3"
+                    android:layout_marginTop="10dp"
+                    android:text="8 hr ago" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/newspic4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvnewstitle3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_local_activity_purple_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:elevation="8dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvnewstitle4"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hello"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvnewsptime4"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnewstitle4"
+                    android:layout_marginTop="10dp"
+                    android:text="22 hr ago" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/newspic5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvnewstitle4"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_local_activity_purple_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:elevation="8dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvnewstitle5"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hello"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvnewsptime5"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnewstitle5"
+                    android:layout_marginTop="10dp"
+                    android:text="3 day ago" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/newspic6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvnewstitle5"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_local_activity_purple_24dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.ViewRulesActivity"></activity>
+        <activity android:name=".UI.DetailLawsActivity"></activity>
+        <activity android:name=".UI.ViewRulesActivity" />
         <activity android:name=".UI.ViewNewsActivity" />
         <activity android:name=".UI.ViewEventActivity" />
         <activity android:name=".UI.DashboardActivity" />
