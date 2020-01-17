@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".UI.DetailLawsActivity"></activity>
+        <activity android:name=".UI.DetailRulesActivity" />
         <activity android:name=".UI.ViewRulesActivity" />
         <activity android:name=".UI.ViewNewsActivity" />
         <activity android:name=".UI.ViewEventActivity" />
