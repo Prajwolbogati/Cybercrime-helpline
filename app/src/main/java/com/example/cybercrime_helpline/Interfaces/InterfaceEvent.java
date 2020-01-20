@@ -1,5 +1,7 @@
 package com.example.cybercrime_helpline.Interfaces;
 
+import com.example.cybercrime_helpline.Models.ResponseImage;
+
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.*;
@@ -12,7 +14,7 @@ public interface InterfaceEvent {
 
     @Multipart
     @POST("upload")
-    Call<ImageResponse> uploadimage(@Part MultipartBody.Part img);
+    Call<ResponseImage> uploadimage(@Part MultipartBody.Part img);
 
     @GET("/events")
     Call<List<Event>> getallevents();
