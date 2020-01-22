@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cybercrime_helpline.Interfaces.InterfaceEvent;
+import com.example.cybercrime_helpline.Models.Event;
 import com.example.cybercrime_helpline.Models.ResponseImage;
 import com.example.cybercrime_helpline.R;
 

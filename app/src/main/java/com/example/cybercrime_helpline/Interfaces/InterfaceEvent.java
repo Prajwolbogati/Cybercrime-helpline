@@ -1,5 +1,6 @@
 package com.example.cybercrime_helpline.Interfaces;
 
+import com.example.cybercrime_helpline.Models.Event;
 import com.example.cybercrime_helpline.Models.ResponseImage;
 
 import okhttp3.MultipartBody;

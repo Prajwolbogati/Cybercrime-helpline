@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cybercrime_helpline.Models.Event;
 import com.example.cybercrime_helpline.R;
+import com.example.cybercrime_helpline.UI.EventdetailActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -80,7 +81,7 @@ public class AdapterEvent extends RecyclerView.Adapter<AdapterEvent.EventViewHol
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(mContext, EventDetailsActivity.class);
+                Intent intent = new Intent(mContext, EventdetailActivity.class);
                 intent.putExtra("image", eventModel.getImage_Name());
                 intent.putExtra("fullname", eventModel.getFullname());
                 intent.putExtra("event_type", eventModel.getEvent_type());
