@@ -8,6 +8,7 @@ import com.example.cybercrime_helpline.R;
 
 public class ViewRulesActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
