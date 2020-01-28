@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.Objects;
@@ -16,6 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText username;
     private EditText logpassword;
     private Button btnlog;
+    private ImageView logimage;
 
 
     @Override
@@ -25,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         logpassword = findViewById(R.id.logpassword);
         btnlog = findViewById(R.id.btnlog);
+        logimage = findViewById(R.id.logimage);
 
         btnlog.setOnClickListener(new View.OnClickListener() {
 
