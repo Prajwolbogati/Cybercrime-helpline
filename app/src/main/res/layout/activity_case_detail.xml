@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.EventdetailActivity">
+    tools:context=".UI.CaseDetailActivity">
 
     <ImageView
         android:layout_width="100dp"
@@ -20,7 +20,7 @@
         android:layout_below="@+id/casedetailpic"
         android:layout_marginTop="27dp"
         android:layout_marginLeft="50dp"
-        android:text="Event name" />
+        android:text="Victim name" />
 
 
     <TextView
@@ -30,7 +30,7 @@
         android:layout_below="@id/casedetailpic"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="27dp"
-        android:hint="Event " />
+        android:hint="Name " />
 
     <TextView
         android:id="@+id/lblcasetype"
@@ -39,7 +39,7 @@
         android:layout_below="@+id/lblcvictimname"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="27dp"
-        android:text="Event Type" />
+        android:text="Case Type" />
 
     <TextView
         android:id="@+id/detailcasetype"
@@ -71,7 +71,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="25dp"
         android:layout_toEndOf="@+id/casedetailpic"
-        android:hint="Event Description"
+        android:hint="Case Description"
         android:layout_toRightOf="@+id/casedetailpic" />
 
     <TextView
@@ -92,7 +92,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="25dp"
         android:layout_toEndOf="@+id/casedetailpic"
-        android:hint="Event Location"
+        android:hint="Victim Location"
         android:layout_toRightOf="@+id/casedetailpic" />
 
 
