@@ -9,6 +9,8 @@ import android.os.Handler;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.cybercrime_helpline.UI.LoginActivity;
+
 public class SplashActivity extends AppCompatActivity {
     private EditText username;
     private EditText logpassword;
@@ -39,7 +41,7 @@ public class SplashActivity extends AppCompatActivity {
             finish();
             Toast.makeText(SplashActivity.this,"Successfull",Toast.LENGTH_SHORT).show();
         }else{
-            Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
             Toast.makeText(SplashActivity.this,"Either username or password is incorrect",Toast.LENGTH_SHORT).show();

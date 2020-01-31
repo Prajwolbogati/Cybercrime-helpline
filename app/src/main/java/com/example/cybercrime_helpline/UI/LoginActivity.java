@@ -1,4 +1,4 @@
-package com.example.cybercrime_helpline;
+package com.example.cybercrime_helpline.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.example.cybercrime_helpline.MainActivity;
+import com.example.cybercrime_helpline.R;
 
 import java.util.Objects;
 
@@ -36,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(Objects.equals(username.getText().toString(), "admin")&& Objects.equals(logpassword.getText().toString(),"admin"))
                 {
                     Toast.makeText(LoginActivity.this,"You have Authenticated Successfully",Toast.LENGTH_LONG).show();{
-                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
                 }else

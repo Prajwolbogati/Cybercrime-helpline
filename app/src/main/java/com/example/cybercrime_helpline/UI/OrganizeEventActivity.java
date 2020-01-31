@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.cybercrime_helpline.R;
 
-public class EventsActivity extends AppCompatActivity {
+public class OrganizeEventActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_events);
+        setContentView(R.layout.activity_organize_event);
     }
 }

@@ -20,10 +20,10 @@
         <activity android:name=".UI.ViewEventActivity" />
         <activity android:name=".UI.DashboardActivity" />
         <activity android:name=".UI.EventdetailActivity" />
-        <activity android:name=".UI.EventsActivity" />
-        <activity android:name=".OrganizeEventActivity" />
+        <activity android:name=".UI.EventsFragment" />
+        <activity android:name=".UI.OrganizeEventActivity" />
         <activity android:name=".UI.FileCaseActivity" />
-        <activity android:name=".CasesActivity" />
+        <activity android:name=".CasesFragment" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,8 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".UI.RegisterActivity" />
+        <activity android:name=".UI.LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
