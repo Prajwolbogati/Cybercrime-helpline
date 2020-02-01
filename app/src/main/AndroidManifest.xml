@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.CaseEvidence"></activity>
+        <activity android:name=".UI.ViewCaseActivity"></activity>
+        <activity android:name=".UI.CaseEvidence" />
         <activity android:name=".UI.CountCaseActivity" />
         <activity android:name=".UI.CaseDetailActivity" />
         <activity android:name=".UI.DetailLawsActivity" />
-        <activity android:name=".UI.DetailRulesActivity" />
+        <activity android:name=".UI.DetailNewsActivity" />
         <activity android:name=".UI.ViewRulesActivity" />
         <activity android:name=".UI.ViewNewsActivity" />
         <activity android:name=".UI.ViewEventActivity" />

@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.cybercrime_helpline.R;
 
-public class DetailRulesActivity extends AppCompatActivity {
+public class DetailNewsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_rules);
+        setContentView(R.layout.activity_detail_news);
     }
 }
