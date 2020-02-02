@@ -107,7 +107,7 @@ public class AdapterEvent extends RecyclerView.Adapter<AdapterEvent.EventViewHol
 
         public EventViewHolder(@NonNull View eventView) {
             super(eventView);
-            eventimgview=eventView.findViewById(R.id.eventimgview);
+            eventimgview=eventView.findViewById(R.id.caseimgview);
             eventname=eventView.findViewById(R.id.eventname);
             eventvtype=eventView.findViewById(R.id.eventvtype);
             tvedesc=eventView.findViewById(R.id.tvedesc);

@@ -20,10 +20,10 @@ public class EventdetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eventdetail);
 
-        eventdetailName = findViewById(R.id.eventdetailName);
+        eventdetailName = findViewById(R.id.victimdetailName);
         detaileventtype = findViewById(R.id.detaileventtype);
-        detaileDescription = findViewById(R.id.detaileDescription);
-        detailevLocation = findViewById(R.id.detailevLocation);
+        detaileDescription = findViewById(R.id.detailcDescription);
+        detailevLocation = findViewById(R.id.detailcaLocation);
         eventdetailpic = findViewById(R.id.eventdetailpic);
 
         Bundle bundle = getIntent().getExtras();

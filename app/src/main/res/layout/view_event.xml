@@ -7,7 +7,7 @@
         android:layout_width="120dp"
         android:layout_height="150dp"
         android:src="@drawable/ic_launcher_background"
-        android:id="@+id/eventimgview"
+        android:id="@+id/caseimgview"
         android:layout_margin="15dp"
         android:layout_marginTop="50dp"/>
 
@@ -16,10 +16,10 @@
         android:layout_height="wrap_content"
         android:hint="Event Name"
         android:id="@+id/eventname"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
 
 
@@ -29,32 +29,32 @@
         android:layout_height="wrap_content"
         android:hint="Event Type"
         android:id="@+id/eventvtype"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_below="@+id/eventname"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Description"
         android:id="@+id/tvedesc"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_below="@id/eventvtype"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Location"
         android:id="@+id/tvelocation"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_below="@+id/tvedesc"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
 </RelativeLayout>

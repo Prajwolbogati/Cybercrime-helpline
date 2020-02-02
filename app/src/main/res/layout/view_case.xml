@@ -7,7 +7,7 @@
         android:layout_width="120dp"
         android:layout_height="150dp"
         android:src="@drawable/ic_launcher_background"
-        android:id="@+id/eventimgview"
+        android:id="@+id/caseimgview"
         android:layout_margin="15dp"
         android:layout_marginTop="50dp"/>
 
@@ -15,65 +15,65 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Case Name"
-        android:id="@+id/eventname"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:id="@+id/casename"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Criminal"
         android:id="@+id/cybercriminal"
-        android:layout_toEndOf="@+id/eventimgview"
-        android:layout_below="@id/eventname"
+        android:layout_toEndOf="@+id/caseimgview"
+        android:layout_below="@id/casename"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Case Type"
-        android:id="@+id/eventvtype"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:id="@+id/casevtype"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_below="@+id/cybercriminal"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Evidence"
         android:id="@+id/tvcevidence"
-        android:layout_toEndOf="@+id/eventimgview"
-        android:layout_below="@id/eventvtype"
+        android:layout_toEndOf="@+id/caseimgview"
+        android:layout_below="@id/casevtype"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Description"
         android:id="@+id/tvcdesc"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_below="@id/tvcevidence"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Location"
         android:id="@+id/tvclocation"
-        android:layout_toEndOf="@+id/eventimgview"
+        android:layout_toEndOf="@+id/caseimgview"
         android:layout_below="@+id/tvcdesc"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/eventimgview" />
+        android:layout_toRightOf="@+id/caseimgview" />
 
 </RelativeLayout>
