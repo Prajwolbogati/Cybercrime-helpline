@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"/>
 
     <TextView
-        android:id="@+id/lbleventname"
+        android:id="@+id/lbleventName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/eventdetailpic"
@@ -36,7 +36,7 @@
         android:id="@+id/lbleventtype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/lbleventname"
+        android:layout_below="@+id/lbleventName"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="27dp"
         android:text="Event Type" />
