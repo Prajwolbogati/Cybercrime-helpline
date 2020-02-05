@@ -30,11 +30,10 @@ public class Registerbll {
         this.username = username;
         this.password = password;
     }
-    public Registerbll()
-    {
+
+public Registerbll(){
 
     }
-
 
     public boolean registeruser(User user) {
 

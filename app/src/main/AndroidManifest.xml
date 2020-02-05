@@ -2,11 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cybercrime_helpline">
 
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".UI.ViewCaseActivity"></activity>
@@ -18,21 +28,25 @@
         <activity android:name=".UI.ViewRulesActivity" />
         <activity android:name=".UI.ViewNewsActivity" />
         <activity android:name=".UI.ViewEventActivity" />
-        <activity android:name=".UI.DashboardActivity" />
+        <activity android:name=".UI.DashboardActivity" >
+
+        </activity>
         <activity android:name=".UI.EventdetailActivity" />
         <activity android:name=".UI.EventsFragment" />
         <activity android:name=".UI.OrganizeEventActivity" />
         <activity android:name=".UI.FileCaseActivity" />
-        <activity android:name=".CasesFragment" />
+        <activity android:name=".UI.CasesFragment" />
         <activity android:name=".SplashActivity">
+
+        </activity>
+        <activity android:name=".UI.RegisterActivity" />
+        <activity android:name=".UI.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.RegisterActivity" />
-        <activity android:name=".UI.LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

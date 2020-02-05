@@ -17,7 +17,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="20dp">
-            //design on process
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="130dp"/>

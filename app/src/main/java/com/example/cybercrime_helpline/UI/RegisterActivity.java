@@ -16,21 +16,23 @@ import com.example.cybercrime_helpline.R;
 import com.example.cybercrime_helpline.StrictMod.StrictMode;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText regfullname, regcitizenship, regfathername, regcontact, regemail, regusername, regpassword;
+    EditText fullname, citizenid, fathername, number, email_address, username, password;
     Button btnregister, btnlogin;
+
+    public String BASE_URL = "http://10.0.2.2:3000/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        regfullname = findViewById(R.id.regfullname);
-        regcitizenship = findViewById(R.id.regcitizenship);
-        regfathername = findViewById(R.id.regfathername);
-        regcontact = findViewById(R.id.regcontact);
-        regemail = findViewById(R.id.regemail);
-        regusername = findViewById(R.id.regusername);
-        regpassword = findViewById(R.id.regpassword);
+        fullname = findViewById(R.id.regfullname);
+        citizenid = findViewById(R.id.regcitizenship);
+        fathername = findViewById(R.id.regfathername);
+        number = findViewById(R.id.regcontact);
+        email_address = findViewById(R.id.regemail);
+        username = findViewById(R.id.regusername);
+        password = findViewById(R.id.regpassword);
 
         btnregister = findViewById(R.id.btnregister);
 
@@ -51,24 +53,24 @@ public class RegisterActivity extends AppCompatActivity {
                 StrictMode.StrictMode();
 
                 User registerBLL = new User(
-                        regfullname.getText().toString(),
-                        regcitizenship.getText().toString(),
-                        regfathername.getText().toString(),
-                        regcontact.getText().toString(),
-                        regemail.getText().toString(),
-                        regusername.getText().toString(),
-                        regpassword.getText().toString()
+                        fullname.getText().toString(),
+                        citizenid.getText().toString(),
+                        fathername.getText().toString(),
+                        number.getText().toString(),
+                        email_address.getText().toString(),
+                        username.getText().toString(),
+                        password.getText().toString()
                 );
 
                 Registerbll bll = new Registerbll();
                 if(bll.registeruser(registerBLL)){
-                    regfullname.setText("");
-                    regfathername.setText("");
-                    regemail.setText("");
-                    regusername.setText("");
-                    regcontact.setText("");
-                    regcitizenship.setText("");
-                    regpassword.setText("");
+                    fullname.setText("");
+                    fathername.setText("");
+                    email_address.setText("");
+                    username.setText("");
+                    number.setText("");
+                    citizenid.setText("");
+                    password.setText("");
                     startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                 }
                 else {
@@ -80,32 +82,32 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     public boolean nullValidation(){
-        if (TextUtils.isEmpty(regfullname.getText().toString())){
-            regfullname.setError("Required Field");
+        if (TextUtils.isEmpty(fullname.getText().toString())){
+            fullname.setError("Required Field");
             return false;
         }
-        else if (TextUtils.isEmpty(regcitizenship.getText().toString())){
-            regcitizenship.setError("Required Field");
+        else if (TextUtils.isEmpty(citizenid.getText().toString())){
+            citizenid.setError("Required Field");
             return false;
         }
-        else if (TextUtils.isEmpty(regfathername.getText().toString())){
-            regfathername.setError("Required Field");
+        else if (TextUtils.isEmpty(fathername.getText().toString())){
+            fathername.setError("Required Field");
             return false;
         }
-        else if (TextUtils.isEmpty(regcontact.getText().toString())){
-            regcontact.setError("Required Field");
+        else if (TextUtils.isEmpty(number.getText().toString())){
+            number.setError("Required Field");
             return false;
         }
-        else if (TextUtils.isEmpty(regemail.getText().toString())){
-            regemail.setError("Required Field");
+        else if (TextUtils.isEmpty(email_address.getText().toString())){
+            email_address.setError("Required Field");
             return false;
         }
-        else if (TextUtils.isEmpty(regusername.getText().toString())){
-            regusername.setError("Required Field");
+        else if (TextUtils.isEmpty(username.getText().toString())){
+            username.setError("Required Field");
             return false;
         }
-        else if (TextUtils.isEmpty(regpassword.getText().toString())){
-           regpassword.setError("Required Field");
+        else if (TextUtils.isEmpty(password.getText().toString())){
+           password.setError("Required Field");
             return false;
         }
 

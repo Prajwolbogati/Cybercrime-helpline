@@ -23,28 +23,13 @@ public class SplashActivity extends AppCompatActivity {
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
+
+
             @Override
             public void run() {
-                checkUser();
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
-        },2000);
-    }
-
-    private void checkUser(){
-
-        SharedPreferences sharedPreferences = getSharedPreferences("User",MODE_PRIVATE);
-        String usernames = sharedPreferences.getString("Username","");
-        String password = sharedPreferences.getString("password","");
-        if (usernames.equals("admin") && password.equals("admin")){
-            Intent intent = new Intent(SplashActivity.this,MainActivity.class);
-            startActivity(intent);
-            finish();
-            Toast.makeText(SplashActivity.this,"Successfull",Toast.LENGTH_SHORT).show();
-        }else{
-            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
-            Toast.makeText(SplashActivity.this,"Either username or password is incorrect",Toast.LENGTH_SHORT).show();
-        }
+        }, 2000);
     }
 }
