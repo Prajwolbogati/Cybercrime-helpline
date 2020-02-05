@@ -10,8 +10,7 @@
 
     <ImageView
         android:layout_width="336dp"
-        android:layout_height="234dp"
-        android:id="@+id/logimage"/>
+        android:layout_height="234dp" />
 
 
 <EditText
