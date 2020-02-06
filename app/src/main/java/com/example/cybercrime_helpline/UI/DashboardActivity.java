@@ -18,6 +18,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout dashboard;
+    private String userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,9 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 break;
             case R.id.nav_profile:
                 ViewProfileFragment profileFragment = new ViewProfileFragment();
+                Bundle bundle = new Bundle();
+                bundle.putString("userid",this.userId);
+                profileFragment.setArguments(bundle);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         profileFragment).commit();
                 break;
