@@ -196,12 +196,6 @@ public class FileCaseActivity extends AppCompatActivity {
                         startActivity(caseintent);
                         finish();
 
-//                        name.setText("");
-//                        price.setText("");
-//                        description.setText("");
-//                        imagename.setText("");
-//                        imageView.setImageResource(R.drawable.noimage);
-                        //             startActivity(new Intent(getApplicationContext(), ShowEventActivity.class));
                     }else {
                         try{
                             Log.d("VAL", response.toString());
