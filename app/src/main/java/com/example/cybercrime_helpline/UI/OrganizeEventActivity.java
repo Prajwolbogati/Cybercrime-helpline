@@ -74,6 +74,7 @@ public class OrganizeEventActivity extends AppCompatActivity {
 
 
 
+
         btnsure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -191,12 +192,6 @@ public class OrganizeEventActivity extends AppCompatActivity {
 
                         Log.d("VAL", "success response ");
 
-//                        name.setText("");
-//                        price.setText("");
-//                        description.setText("");
-//                        imagename.setText("");
-//                        imageView.setImageResource(R.drawable.noimage);
-                        //             startActivity(new Intent(getApplicationContext(), ShowEventActivity.class));
                     }else {
                         try{
                             Log.d("VAL", response.toString());
