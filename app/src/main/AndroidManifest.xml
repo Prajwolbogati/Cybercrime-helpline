@@ -23,7 +23,7 @@
         <activity android:name=".UI.EventsFragment" />
         <activity android:name=".UI.OrganizeEventActivity" />
         <activity android:name=".UI.FileCaseActivity" />
-        <activity android:name=".CasesFragment" />
+        <activity android:name="UI.CasesFragment" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

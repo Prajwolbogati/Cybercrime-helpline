@@ -5,8 +5,13 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
@@ -34,7 +39,38 @@ public class ViewRulesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_rules);
+
+        SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        final Sensor proximitysensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+
+        SensorEventListener sensorEventListener = new SensorEventListener() {
+            @Override
+            public void onSensorChanged(SensorEvent sensorEvent) {
+
+                if (sensorEvent.values[0] < proximitysensor.getMaximumRange()) {
+
+
+                    Toast.makeText(ViewRulesActivity.this,"Application Closed",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ViewRulesActivity.this, HomeFragment.class);
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(ViewRulesActivity.this,"Far",Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int i) {
+
+            }
+        };
+        sensorManager.registerListener(sensorEventListener,proximitysensor,2*1000*1000);
+
+
         recycleView = findViewById(R.id.rulesrecycleview);
+
+
 
         recycleView.setLayoutManager(new GridLayoutManager(this,2));
         recycleView.addItemDecoration(new ViewRulesActivity.GridSpacingItemDecoration(2, dpToPx(3), true));
