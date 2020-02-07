@@ -42,7 +42,9 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                     new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
-
+        Intent intent = getIntent();
+        userId = intent.getStringExtra("userid");
+        Toast.makeText(this, userId, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -71,6 +73,8 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 break;
             case R.id.nav_location:
                 Toast.makeText(this, "Your Location", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(DashboardActivity.this, MapsActivity.class);
+                startActivity(intent);
                 return true;
 
             case R.id.nav_logout:
