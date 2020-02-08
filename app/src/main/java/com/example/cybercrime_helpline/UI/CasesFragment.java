@@ -11,7 +11,7 @@ import android.widget.Button;
 
 import com.example.cybercrime_helpline.R;
 
-class CasesFragment extends Fragment {
+public class CasesFragment extends Fragment {
     Button btnaddcase,btnshowcases;
 
 

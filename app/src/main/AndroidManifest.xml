@@ -19,35 +19,61 @@
         android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.ViewCaseActivity"></activity>
-        <activity android:name=".UI.CaseEvidence" />
-        <activity android:name=".UI.CountCaseActivity" />
-        <activity android:name=".UI.CaseDetailActivity" />
-        <activity android:name=".UI.DetailLawsActivity" />
-        <activity android:name=".UI.DetailNewsActivity" />
-        <activity android:name=".UI.ViewRulesActivity" />
-        <activity android:name=".UI.ViewNewsActivity" />
-        <activity android:name=".UI.ViewEventActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name=".UI.MapsActivity"
+            android:label="@string/title_activity_maps">
+        </activity>
+        <activity android:name=".UI.ViewCaseActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".UI.CaseEvidence"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.CountCaseActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.CaseDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.DetailLawsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.DetailNewsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.ViewRulesActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.ViewNewsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.ViewEventActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".UI.DashboardActivity" >
 
         </activity>
-        <activity android:name=".UI.EventdetailActivity" />
-        <activity android:name=".UI.EventsFragment" />
-        <activity android:name=".UI.OrganizeEventActivity" />
-        <activity android:name=".UI.FileCaseActivity" />
-        <activity android:name=".UI.CasesFragment" />
+        <activity android:name=".UI.EventdetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.EventsFragment"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.OrganizeEventActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.FileCaseActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.CasesFragment"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".SplashActivity">
 
         </activity>
-        <activity android:name=".UI.RegisterActivity" />
-        <activity android:name=".UI.LoginActivity">
+        <activity android:name=".UI.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UI.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

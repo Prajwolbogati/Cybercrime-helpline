@@ -29,7 +29,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Prajwol Bogati"
+                    android:hint="Prajwol Bogati"
                     android:textStyle="bold"
                     android:textSize="21sp"/>
 
@@ -92,8 +92,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="Father Name"/>
+                    android:paddingLeft="20dp" />
 
             </LinearLayout>
             <LinearLayout
@@ -110,8 +109,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="Citizenship Number"/>
+                    android:paddingLeft="20dp" />
 
             </LinearLayout>
             <LinearLayout
@@ -128,8 +126,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="Contact Number"/>
+                    android:paddingLeft="20dp" />
 
             </LinearLayout>
             <LinearLayout
@@ -146,8 +143,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="Email"/>
+                    android:paddingLeft="20dp" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -163,8 +159,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="UserName"/>
+                    android:paddingLeft="20dp" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -180,8 +175,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="password"/>
+                    android:paddingLeft="20dp" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"

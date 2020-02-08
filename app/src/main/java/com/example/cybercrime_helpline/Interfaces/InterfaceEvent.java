@@ -10,14 +10,14 @@ import retrofit2.http.*;
 import java.util.List;
 
 public interface InterfaceEvent {
-    @POST("events")
+    @POST("event")
     Call<Void> addevent(@Body Event event);
 
     @Multipart
     @POST("upload")
     Call<ResponseImage> uploadimage(@Part MultipartBody.Part img);
 
-    @GET("/events")
+    @GET("/event")
     Call<List<Event>> getallevents();
 }
 

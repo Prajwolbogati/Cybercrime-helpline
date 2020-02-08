@@ -14,14 +14,14 @@ import retrofit2.http.POST;
 import retrofit2.http.Part;
 
 public interface InterfaceCase {
-    @POST("cases")
+    @POST("case")
     Call<Void> addcase(@Body Case cases);
 
     @Multipart
     @POST("upload")
     Call<ResponseImage> uploadimage(@Part MultipartBody.Part img);
 
-    @GET("/cases")
+    @GET("/case")
     Call<List<Case>> getallcases();
 
 }

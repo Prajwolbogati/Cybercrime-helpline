@@ -17,7 +17,7 @@ public interface InterfaceLaw {
     @POST("upload")
     Call<ResponseImage> uploadimage(@Part MultipartBody.Part img);
 
-    @GET("/rules")
+    @GET("/law")
     Call<List<Rules>> getalllaws();
 }
 
