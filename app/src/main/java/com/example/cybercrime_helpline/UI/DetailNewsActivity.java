@@ -21,7 +21,7 @@ public class DetailNewsActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
 
         if (bundle != null){
-            String image = bundle.getString("image");
+            //String image = bundle.getString("image");
             tvnewstitle.setText(bundle.getString("title"));
             tvnewsptime.setText(bundle.getString("description"));
         }

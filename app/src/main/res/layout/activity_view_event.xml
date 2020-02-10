@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".UI.ViewEventActivity">
+    android:orientation="horizontal"
+    tools:context=".UI.ViewEventActivity"
+    android:background="#acbaa9">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

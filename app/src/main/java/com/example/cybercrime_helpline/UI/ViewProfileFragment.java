@@ -34,7 +34,7 @@ public class ViewProfileFragment extends Fragment {
     EditText email, username, password;
     CircleImageView circleImageView;
     Bundle bundle= getArguments();
-    public  String BASE_URL = "http://192.168.123.5:3000/";
+    public  String BASE_URL = "http://10.0.2.2:3000/";
     String uid;
 
 

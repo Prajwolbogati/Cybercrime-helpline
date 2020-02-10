@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".UI.ViewNewsActivity">
+    tools:context=".UI.ViewNewsActivity"
+    android:background="#acbaa9">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

@@ -5,12 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.cybercrime_helpline.R;
@@ -19,7 +21,7 @@ import com.example.cybercrime_helpline.R;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
-    Button btnnewshome, btnlawshome, btneventshome, btncaseshome;
+    RelativeLayout btnnewshome, btnlawshome, btneventshome, btncaseshome;
 
 
     public HomeFragment() {
@@ -49,12 +51,14 @@ public class HomeFragment extends Fragment {
         btneventshome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "View Events", Toast.LENGTH_SHORT).show();
-                Intent intent;
-                intent = new Intent(getActivity(), ViewEventActivity.class);
-                startActivity(intent);
+                Fragment mFragment = null;
+                mFragment = new EventsFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, mFragment).commit();
             }
         });
+
         btncaseshome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,6 +1,7 @@
 package com.example.cybercrime_helpline.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.StrictMode;
@@ -16,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cybercrime_helpline.Models.News;
 import com.example.cybercrime_helpline.R;
+import com.example.cybercrime_helpline.UI.DetailNewsActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -76,19 +78,18 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.NewsViewHolder
             e.printStackTrace();
         }
 
-//        rulesViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent intent = new Intent(mContext, RulesDetailsActivity.class);
-//                intent.putExtra("image", rulesModel.getImageName());
-//                intent.putExtra("title", rulesModel.getTitle());
-//                intent.putExtra("desc", rulesModel.getDesc());
-//                intent.putExtra("fines, rulesModel.getFines());
-//                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                mContext.startActivity(intent);
-//            }
-//        });
+       holder.itemView.setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View v) {
+
+               Intent intent = new Intent(mContext, DetailNewsActivity.class);
+                intent.putExtra("image", newsModel.getImage_Name());
+                intent.putExtra("title", newsModel.getTitle());
+                intent.putExtra("desc", newsModel.getDescription());
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                mContext.startActivity(intent);
+            }
+        });
     }
 
 

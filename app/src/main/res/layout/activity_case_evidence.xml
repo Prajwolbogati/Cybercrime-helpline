@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".UI.CaseEvidence">
+    tools:context=".UI.CaseEvidence"
+    android:background="#acbaa9">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -18,7 +19,8 @@
             android:text="CRIMINAL"
             android:layout_marginLeft="8dp"
             android:id="@+id/storeinfo"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@drawable/bg_ui"/>
 
         <Button
             android:layout_width="190dp"
@@ -26,7 +28,8 @@
             android:layout_marginLeft="10dp"
             android:text="EVIDENCE"
             android:id="@+id/showinfo"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@drawable/bg_ui"/>
 
     </LinearLayout>
 

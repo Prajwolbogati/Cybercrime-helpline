@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:gravity="center"
-    tools:context=".UI.FileCaseActivity">
+    tools:context=".UI.FileCaseActivity"
+    android:background="@drawable/bg_ux">
 
     <TextView
         android:textStyle="bold"
@@ -16,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Case your Report"
         android:textAlignment="center"
+        android:textColor="#ffff"
         android:layout_marginBottom="20dp"/>
     <ImageView
         android:id="@+id/casepic"
@@ -30,6 +32,7 @@
         android:layout_marginBottom="10dp"
         android:textAlignment="center"
         android:id="@+id/tvcasepicname"
+        android:textColor="#ffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -38,12 +41,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="VERIFY"/>
+        android:text="VERIFY"
+        android:background="@drawable/bg_ui"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/victimname"
+        android:textColor="#ffff"
         android:hint="Victim Name"
         />
     <EditText
@@ -56,12 +61,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etcasetype"
+        android:textColor="#ffff"
         android:hint="case Type"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etevidence"
+        android:textColor="#ffff"
         android:hint="Evidence"
         />
 
@@ -70,6 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etdescription"
+        android:textColor="#ffff"
         android:hint="Description"
         />
     <EditText
@@ -77,6 +85,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/etlocation"
         android:hint="Location"
+        android:textColor="#ffff"
         />
 
     <Button
@@ -84,7 +93,8 @@
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ADD Case"/>
+        android:text="ADD Case"
+        android:background="@drawable/bg_ui"/>
 
 
 

@@ -3,6 +3,7 @@ package com.example.cybercrime_helpline.UI;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -33,7 +34,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ViewRulesActivity extends AppCompatActivity {
     private RecyclerView recycleView;
-    List<Rules> rulesList= new ArrayList<>();
+    List<Rules> rulesList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +51,11 @@ public class ViewRulesActivity extends AppCompatActivity {
                 if (sensorEvent.values[0] < proximitysensor.getMaximumRange()) {
 
 
-                    Toast.makeText(ViewRulesActivity.this,"Application Closed",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ViewRulesActivity.this, "Application Closed", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(ViewRulesActivity.this, HomeFragment.class);
                     startActivity(intent);
-                }
-                else {
-                    Toast.makeText(ViewRulesActivity.this,"Far",Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(ViewRulesActivity.this, "Far", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -65,17 +65,16 @@ public class ViewRulesActivity extends AppCompatActivity {
 
             }
         };
-        sensorManager.registerListener(sensorEventListener,proximitysensor,2*1000*1000);
+        sensorManager.registerListener(sensorEventListener, proximitysensor, 2 * 1000 * 1000);
 
 
         recycleView = findViewById(R.id.rulesrecycleview);
 
 
-
-        recycleView.setLayoutManager(new GridLayoutManager(this,2));
-        recycleView.addItemDecoration(new ViewRulesActivity.GridSpacingItemDecoration(2, dpToPx(3), true));
+        recycleView.setLayoutManager(new LinearLayoutManager(this));
+        //recycleView.addItemDecoration(new ViewRulesActivity.GridSpacingItemDecoration(2, dpToPx(3), true));
         recycleView.setItemAnimator(new DefaultItemAnimator());
-        recycleView.setAdapter(new AdapterLaw(getApplicationContext(),rulesList));
+        recycleView.setAdapter(new AdapterLaw(getApplicationContext(), rulesList));
 
         readRules();
     }
@@ -110,46 +109,47 @@ public class ViewRulesActivity extends AppCompatActivity {
             }
         });
     }
-    public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
-
-        private int spanCount;
-        private int spacing;
-        private boolean includeEdge;
-
-        public GridSpacingItemDecoration(int spanCount, int spacing, boolean includeEdge) {
-            this.spanCount = spanCount;
-            this.spacing = spacing;
-            this.includeEdge = includeEdge;
-        }
-
-        @Override
-        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-            int position = parent.getChildAdapterPosition(view); // item position
-            int column = position % spanCount; // item column
-
-            if (includeEdge) {
-                outRect.left = spacing - column * spacing / spanCount; // spacing - column * ((1f / spanCount) * spacing)
-                outRect.right = (column + 1) * spacing / spanCount; // (column + 1) * ((1f / spanCount) * spacing)
-
-                if (position < spanCount) { // top edge
-                    outRect.top = spacing;
-                }
-                outRect.bottom = spacing; // item bottom
-            } else {
-                outRect.left = column * spacing / spanCount; // column * ((1f / spanCount) * spacing)
-                outRect.right = spacing - (column + 1) * spacing / spanCount; // spacing - (column + 1) * ((1f /    spanCount) * spacing)
-                if (position >= spanCount) {
-                    outRect.top = spacing; // item top
-                }
-            }
-        }
-    }
-
-    /**
-     * Converting dp to pixel
-     */
-    private int dpToPx(int dp) {
-        Resources r = getResources();
-        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
-    }
 }
+//    public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
+//
+//        private int spanCount;
+//        private int spacing;
+//        private boolean includeEdge;
+//
+//        public GridSpacingItemDecoration(int spanCount, int spacing, boolean includeEdge) {
+//            this.spanCount = spanCount;
+//            this.spacing = spacing;
+//            this.includeEdge = includeEdge;
+//        }
+//
+//        @Override
+//        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+//            int position = parent.getChildAdapterPosition(view); // item position
+//            int column = position % spanCount; // item column
+//
+//            if (includeEdge) {
+//                outRect.left = spacing - column * spacing / spanCount; // spacing - column * ((1f / spanCount) * spacing)
+//                outRect.right = (column + 1) * spacing / spanCount; // (column + 1) * ((1f / spanCount) * spacing)
+//
+//                if (position < spanCount) { // top edge
+//                    outRect.top = spacing;
+//                }
+//                outRect.bottom = spacing; // item bottom
+//            } else {
+//                outRect.left = column * spacing / spanCount; // column * ((1f / spanCount) * spacing)
+//                outRect.right = spacing - (column + 1) * spacing / spanCount; // spacing - (column + 1) * ((1f /    spanCount) * spacing)
+//                if (position >= spanCount) {
+//                    outRect.top = spacing; // item top
+//                }
+//            }
+//        }
+//    }
+//
+//    /**
+//     * Converting dp to pixel
+//     */
+//    private int dpToPx(int dp) {
+//        Resources r = getResources();
+//        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
+//    }
+//}

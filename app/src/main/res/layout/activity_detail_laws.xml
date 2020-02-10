@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    tools:context=".UI.DetailLawsActivity">
+    tools:context=".UI.DetailLawsActivity"
+    android:background="@drawable/bg_ui">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imglawsview"

@@ -1,6 +1,7 @@
 package com.example.cybercrime_helpline.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.StrictMode;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cybercrime_helpline.Models.Rules;
 import com.example.cybercrime_helpline.R;
+import com.example.cybercrime_helpline.UI.DetailLawsActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -77,19 +79,19 @@ public class AdapterLaw extends RecyclerView.Adapter<AdapterLaw.RulesViewHolder>
             e.printStackTrace();
         }
 
-//        rulesViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent intent = new Intent(mContext, RulesDetailsActivity.class);
-//                intent.putExtra("image", rulesModel.getImageName());
-//                intent.putExtra("title", rulesModel.getTitle());
-//                intent.putExtra("desc", rulesModel.getDesc());
-//                intent.putExtra("fines, rulesModel.getFines());
-//                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                mContext.startActivity(intent);
-//            }
-//        });
+       holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(mContext, DetailLawsActivity.class);
+                intent.putExtra("image_Name", rulesModel.getImage_Name());
+                intent.putExtra("title", rulesModel.getTitle());
+                intent.putExtra("description", rulesModel.getDescription());
+                intent.putExtra("fine", rulesModel.getFine());
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                mContext.startActivity(intent);
+            }
+        });
     }
 
 

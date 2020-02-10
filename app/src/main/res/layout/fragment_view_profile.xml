@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.ViewProfileFragment">
+    tools:context=".UI.ViewProfileFragment"
+    android:background="@drawable/bg_ui">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +30,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Prajwol Bogati"
+                    android:text="Prajwol Bogati"
                     android:textStyle="bold"
                     android:textSize="21sp"/>
 
@@ -85,14 +86,18 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
-                    android:layout_height="36dp"/>
+                    android:layout_height="36dp"
+                    android:src="@drawable/profile"
+
+                    />
 
                 <EditText
                     android:id="@+id/profilefaname"
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp" />
+                    android:paddingLeft="20dp"
+                    android:text="Father Name"/>
 
             </LinearLayout>
             <LinearLayout
@@ -103,13 +108,15 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
-                    android:layout_height="36dp"/>
+                    android:layout_height="36dp"
+                    android:src="@drawable/country"/>
                 <EditText
                     android:id="@+id/profilecitizenship"
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp" />
+                    android:paddingLeft="20dp"
+                    android:text="Citizenship Number"/>
 
             </LinearLayout>
             <LinearLayout
@@ -120,13 +127,15 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
-                    android:layout_height="36dp" />
+                    android:layout_height="36dp"
+                    android:src="@drawable/phone"/>
                 <EditText
                     android:id="@+id/profilecontact"
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp" />
+                    android:paddingLeft="20dp"
+                    android:text="Contact Number"/>
 
             </LinearLayout>
             <LinearLayout
@@ -137,13 +146,15 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
-                    android:layout_height="36dp"/>
+                    android:layout_height="36dp"
+                    android:src="@drawable/email"/>
                 <EditText
                     android:id="@+id/profileemail"
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp" />
+                    android:paddingLeft="20dp"
+                    android:text="Email"/>
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -153,13 +164,15 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="36dp"
-                    android:layout_height="36dp"/>
+                    android:layout_height="36dp"
+                    android:src="@drawable/profile"/>
                 <EditText
                     android:id="@+id/profileuname"
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp" />
+                    android:paddingLeft="20dp"
+                    android:text="UserName"/>
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -175,7 +188,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp" />
+                    android:paddingLeft="20dp"
+                    android:text="password"/>
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
